@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <HBox fx:id="HBoxTopo" prefHeight="118.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox fx:id="VBoxEsquerda" prefHeight="200.0" prefWidth="80.0" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <HBox fx:id="HBoxRodaPe" prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <VBox fx:id="VBoxDireita" prefHeight="240.0" prefWidth="80.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane fx:id="AnchorCentro" prefHeight="240.0" prefWidth="423.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="cmbUp" layoutX="154.0" layoutY="37.0" onAction="#preenchercortopo" prefHeight="25.0" prefWidth="110.0" />
+            <ComboBox fx:id="cmbLeft" layoutX="20.0" layoutY="90.0" onAction="#preenchercoresquerda" prefWidth="110.0" />
+            <ComboBox fx:id="cmbRight" layoutX="305.0" layoutY="90.0" onAction="#preenchercordireita" prefWidth="110.0" />
+            <ComboBox fx:id="cmbCenter" layoutX="154.0" layoutY="103.0" onAction="#preenchercorcentro" prefHeight="25.0" prefWidth="110.0" />
+            <ComboBox fx:id="cmbDown" layoutX="154.0" layoutY="173.0" onAction="#preenchercorrodape" prefHeight="25.0" prefWidth="110.0" />
+            <Label layoutX="167.0" layoutY="14.0" text="Cor Topo">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="69.0" text="Cor Esquerda">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font></Label>
+            <Label layoutX="305.0" layoutY="69.0" text="Cor Direita" textFill="#0d0d0d">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font></Label>
+            <Label layoutX="167.0" layoutY="81.0" text="Cor Centro">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font></Label>
+            <Label layoutX="160.0" layoutY="148.0" text="Cor Roda-Pé">
+               <font>
+                  <Font name="Marlett" size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
